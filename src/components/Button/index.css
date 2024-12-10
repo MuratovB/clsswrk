@@ -4,7 +4,6 @@
     cursor: pointer;
     font-size: 18px;
     transition: background 200ms ease-in-out;
-    margin: 20px;
 }
 
 .btn--primary {
