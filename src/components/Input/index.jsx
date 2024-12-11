@@ -1,12 +1,13 @@
+import React from 'react';
 import "./index.css";
 
 export function Input(props) {
   const {
     type = "text",
     placeholder = "Write here...",
-    value = "",
+    value,
     onChange = () => {},
-    disabled = true,
+    disabled = false,
     label = "Name",
     danger = false,
     children

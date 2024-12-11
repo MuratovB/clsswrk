@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import { Typography } from "./components/Typography";
@@ -7,6 +7,14 @@ import { Tooltip } from "./components/Tooltip";
 import { Accordion } from "./components/Accordion";
 
 function App() {
+  const [value1, setValue1] = useState("Ivan Ivanov");
+  const [value2, setValue2] = useState("Focus");
+  const [value3, setValue3] = useState("Danger");
+
+  const handleChange1 = (e) => setValue1(e.target.value);
+  const handleChange2 = (e) => setValue2(e.target.value);
+  const handleChange3 = (e) => setValue3(e.target.value);
+
   return (
     <div id="trueRoot">
       <Button size="lg">lg, primary</Button>
@@ -16,9 +24,9 @@ function App() {
       <Button variant="bordered">md, bordered</Button>
       <Button variant="bordered" size="sm">sm, bordered</Button>
 
-      <Input type="text" value="Ivan Ivanov" onChange="" disabled="" danger="" />
-      <Input type="text" value="Focus" onChange="" disabled="" danger="" />
-      <Input type="text" value="Danger" onChange="" disabled="" danger="" />
+      <Input value={value1} onChange={handleChange1} />
+      <Input value={value2} onChange={handleChange2} />
+      <Input value={value3} onChange={handleChange3} />
 
       <Typography textSize="sm">
         SM. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

@@ -1,14 +1,13 @@
 import "./index.css"
+import React from 'react';
 
 export function Button(props) {
-    const {type="button", onClick="doNothing", disabled="false", variant="primary", size="md", children} = props;
+    const {type="button", onClick="doNothing", disabled=false, variant="primary", size="md", children} = props;
     const className = `btn btn--${variant} btn--${size}`;
 
     const doNothing = () => {
         console.log("This button did nothing...");
     }
-
-    let disabledHandler = disabled === 'true';
 
     let onClickHandler;
 
@@ -18,7 +17,7 @@ export function Button(props) {
             break;
     }
 
-    return <button type={type} className={className} onClick={onClickHandler} disabled={disabledHandler}>{children}</button>;
+    return <button type={type} className={className} onClick={onClickHandler} disabled={disabled}>{children}</button>;
 }
 
 export default Button;
