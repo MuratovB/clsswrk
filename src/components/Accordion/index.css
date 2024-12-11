@@ -1,18 +1,29 @@
 .accordion {
-    border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+    min-width: 420px;
+    width: 420px;
 }
-  
+
 .accordion-header {
-    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
     cursor: pointer;
     font-weight: bold;
 }
-  
+
+.accordion-toggle-icon {
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.accordion-header:hover .accordion-toggle-icon {
+    transform: scale(1.2);
+}
+
 .accordion-content {
     padding: 15px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ddd;
 }

@@ -20,32 +20,34 @@ function App() {
       <Input type="text" value="Focus" onChange="" disabled="" danger="" />
       <Input type="text" value="Danger" onChange="" disabled="" danger="" />
 
-      <Typography textSize="sm" className="">
+      <Typography textSize="sm">
         SM. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </Typography>
-      <Typography textSize="md" className="">
+      <Typography textSize="md">
         MD. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </Typography>
-      <Typography textSize="lg" className="">
+      <Typography textSize="lg">
         LG. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </Typography>
 
-      <Heading level="1" className="">Heading 1</Heading>
-      <Heading level="2" className="">Heading 2</Heading>
-      <Heading level="3" className="">Heading 3</Heading>
-      <Heading level="4" className="">Heading 4</Heading>
-      <Heading level="5" className="">Heading 5</Heading>
-      <Heading level="6" className="">Heading 6</Heading>
+      <Heading level="1">H1. Heading 1</Heading>
+      <Heading level="2">H2. Heading 2</Heading>
+      <Heading level="3">H3. Heading 3</Heading>
+      <Heading level="4">H4. Heading 4</Heading>
+      <Heading level="5">H5. Heading 5</Heading>
+      <Heading level="6">H6. Heading 6</Heading>
 
-      <Tooltip text="I am a tooltip" position="top"></Tooltip>
-      <Tooltip text="I am a tooltip" position="left"></Tooltip>
-      <Tooltip text="I am a tooltip" position="right"></Tooltip>
-      <Tooltip text="I am a tooltip" position="bottom"></Tooltip>
+      <div id="tooltipsDiv">
+        <Tooltip position="top">Tooltip Top</Tooltip>
+        <Tooltip position="left">Tooltip Left</Tooltip>
+        <Tooltip position="right">Tooltip Right</Tooltip>
+        <Tooltip position="bottom">Tooltip Bottom</Tooltip>
+      </div>
 
-      <Accordion title="Accordion 1" defaultOpen="true">
+      <Accordion title="Accordion">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </Accordion>
-      <Accordion title="Accordion 2" defaultOpen="false">
+      <Accordion title="Accordion Expanded" defaultOpen>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </Accordion>
     </div>

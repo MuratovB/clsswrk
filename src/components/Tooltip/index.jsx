@@ -1,7 +1,7 @@
 import "./index.css";
 
 export function Tooltip(props) {
-  const { text = "", position = "top", children } = props;
+  const { text = "I am a tooltip", position = "top", children } = props;
   const tooltipClass = `tooltip tooltip--${position}`;
 
   return (

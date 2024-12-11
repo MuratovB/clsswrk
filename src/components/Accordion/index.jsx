@@ -13,6 +13,9 @@ export function Accordion(props) {
     <div className="accordion">
       <div className="accordion-header" onClick={toggleAccordion}>
         <h3>{title}</h3>
+        <span className={`accordion-toggle-icon ${isOpen ? 'open' : ''}`}>
+          {isOpen ? '-' : '+'}
+        </span>
       </div>
       {isOpen && <div className="accordion-content">{children}</div>}
     </div>
