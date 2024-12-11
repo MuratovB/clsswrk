@@ -3,12 +3,13 @@ import "./index.css";
 export function Input(props) {
   const {
     type = "text",
-    placeholder = "",
+    placeholder = "Write here...",
     value = "",
     onChange = () => {},
-    disabled = false,
-    label = "",
+    disabled = true,
+    label = "Name",
     danger = false,
+    children
   } = props;
 
   const className = `input ${danger ? "input--danger" : ""}`;
@@ -16,14 +17,7 @@ export function Input(props) {
   return (
     <div className="input-container">
       {label && <label className="input-label">{label}</label>}
-      <input
-        type={type}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        disabled={disabled}
-        className={className}
-      />
+      <input type={type} value={value} onChange={onChange} placeholder={placeholder} disabled={disabled} className={className} />
     </div>
   );
 }
