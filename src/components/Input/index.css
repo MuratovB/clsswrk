@@ -22,15 +22,16 @@
     min-height: 40px;
 }
   
-.input:focus {
+.input:focus, .label--focus {
     border-color: royalblue;
+    color: royalblue;
 }
   
-.input--danger {
+.input--danger, .label--danger{
     border-color: red;
     color: red;
 }
-  
+
 input:disabled {
     background-color: #f5f5f5;
 }

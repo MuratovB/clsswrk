@@ -24,9 +24,9 @@ function App() {
       <Button variant="bordered">md, bordered</Button>
       <Button variant="bordered" size="sm">sm, bordered</Button>
 
-      <Input value={value1} onChange={handleChange1} />
-      <Input value={value2} onChange={handleChange2} />
-      <Input value={value3} onChange={handleChange3} />
+      <Input label="Name" value={value1} onChange={handleChange1} />
+      <Input label="Name" value={value2} onChange={handleChange2} />
+      <Input label="Name" value={value3} onChange={handleChange3} danger/>
 
       <Typography textSize="sm">
         SM. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
